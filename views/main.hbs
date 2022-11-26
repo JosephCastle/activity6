@@ -1,0 +1,14 @@
+<h3>
+  <center>
+    Todos
+  </center>
+</h3>
+<ul class="list-group">
+    {{#each data}}
+
+      <li class="list-group-item">
+        <input type='checkbox' {{#if this.completed}}checked{{/if}}>
+        <labe>{{this.title}}</labe>
+      </li>
+    {{/each}}
+  </ul>
